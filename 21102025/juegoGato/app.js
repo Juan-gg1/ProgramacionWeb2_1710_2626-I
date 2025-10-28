@@ -19,7 +19,7 @@ function dibujarTablero() {
 // Construir el menú textual
 function mostrarMenu() {
   return (
-    "=== GATO INTERACTIVO ===\n\n" +
+    "=== JUEGO DEL GATO ===\n\n" +
     dibujarTablero() +
     "\nTurno actual: " + jugador + "\n\n" +
     "Seleccione una posición (0–8):\n" +
