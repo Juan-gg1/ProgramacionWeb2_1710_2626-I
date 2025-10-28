@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de QR</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Generador de Códigos QR</h1>
+
+    <div class="formulario">
+        <label>Nombre:</label>
+        <input type="text" id="campo1" maxlength="100" placeholder="Escribe tu nombre">
+
+        <label>Correo electrónico:</label>
+        <input type="email" id="campo2" placeholder="correo@ejemplo.com">
+
+        <label>Institución:</label>
+        <input type="text" id="campo3" list="listaInstitucion" placeholder="Selecciona una institución">
+        <datalist id="listaInstitucion">
+            <option value="FES Aragón">Facultad de Estudios Superiores Aragón</option>
+            <option value="IPN">Instituto Politécnico Nacional</option>
+        </datalist>
+
+        <label>Dependencia:</label>
+        <input type="text" id="campo4" placeholder="Área o departamento">
+
+        <div class="botones">
+            <button onclick="crearCodigoQR()">Generar QR</button>
+            <button onclick="window.location.reload()">Nuevo QR</button>
+        </div>
+    </div>
+
+    <div id="resultadoQR" class="resultado"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
